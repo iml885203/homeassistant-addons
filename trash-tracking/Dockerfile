@@ -25,7 +25,7 @@ COPY requirements.txt /app/
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy run script
-COPY trash_tracking_addon/run.sh /
+COPY run.sh /
 RUN chmod a+x /run.sh
 
 # Health check
