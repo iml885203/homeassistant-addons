@@ -53,3 +53,4 @@ schema:
       timeout: int(5,30)
       retry_count: int(1,10)
       retry_delay: int(1,10)
+image: "ghcr.io/iml885203/{arch}-trash-tracking"
