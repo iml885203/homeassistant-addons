@@ -2,6 +2,13 @@
 
 All notable changes to this add-on will be documented in this file.
 
+## [2025.11.6] - 2025-11-21
+
+### Fixed
+- 🔧 **Home Assistant Ingress Compatibility** - Fixed API 404 errors when using setup wizard through Ingress
+- 🌐 Changed fetch calls to use relative paths instead of absolute paths
+- ✅ Added BDD test to verify Ingress compatibility
+
 ## [2025.11.5] - 2025-11-21
 
 ### Added
