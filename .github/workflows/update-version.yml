@@ -35,6 +35,12 @@ jobs:
           ADDON="${{ github.event.client_payload.addon }}"
           VERSION="${{ github.event.client_payload.version }}"
 
+          # Check if there are changes
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add ${ADDON}/config.yaml
