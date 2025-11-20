@@ -2,6 +2,31 @@
 
 All notable changes to this add-on will be documented in this file.
 
+## [2025.11.5] - 2025-11-21
+
+### Added
+- 🌐 **Web UI Setup Wizard** - Interactive configuration interface via Home Assistant Ingress
+- 📍 Address-based auto-configuration - Simply enter your address to get recommended settings
+- 🎯 Automatic route recommendation - System finds the best garbage truck routes for you
+- 🧪 BDD Integration Tests - Comprehensive Behave-based testing (17 scenarios, 88 steps)
+
+### Changed
+- ♻️ Simplified CLI - Removed coordinate-based queries, now only accepts addresses
+- 🏗️ Clean Architecture refactoring - Better separation of concerns
+- 📦 Reduced Docker images - Now builds only 3 architectures (amd64, aarch64, armv7)
+- 🧹 Replaced unit tests with BDD integration tests
+- 📝 Updated API routes structure - Extracted setup wizard to separate module
+
+### Fixed
+- ✅ Config validation - Enter and exit points must be different
+- 🔧 Type checking errors - Resolved mypy issues in setup routes
+- 🔄 CI/CD improvements - Better handling of unchanged versions
+
+### Removed
+- ❌ Coordinate-based CLI queries (--lat, --lng flags)
+- ❌ Unit test suite (replaced with BDD tests)
+- ❌ armhf and i386 architecture support (rarely used)
+
 ## [1.0.0] - 2025-11-18
 
 ### Added
