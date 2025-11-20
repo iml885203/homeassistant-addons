@@ -9,9 +9,27 @@
 3. Add: `https://github.com/iml885203/trash_tracking`
 4. Find "Trash Tracking" and install
 
-### 2. Configure Add-on
+### 2. Easy Setup with Setup Wizard (Recommended 🌟)
 
-Click the **Configuration** tab:
+**NEW!** The add-on now includes an automatic setup wizard that finds the nearest garbage truck route for you!
+
+1. Start the add-on (you can use the default configuration first)
+2. Go to **Supervisor** → **Trash Tracking** → Click "OPEN WEB UI" button
+3. Enter your address (e.g., "新北市板橋區中山路一段161號")
+4. Click "開始分析" - the system will automatically:
+   - Find your GPS coordinates
+   - Locate the nearest garbage truck route
+   - Select appropriate entry and exit points
+   - Generate optimal configuration
+5. Review the suggested configuration
+6. Click "儲存設定" to save
+7. Restart the add-on to apply changes
+
+**That's it!** No need to manually find coordinates or collection point names.
+
+### 3. Manual Configuration (Advanced)
+
+If you prefer to configure manually, click the **Configuration** tab:
 
 ```yaml
 location:
@@ -25,7 +43,7 @@ tracking:
   approaching_threshold: 2
 ```
 
-### 3. Start Add-on
+### 4. Start Add-on
 
 Click the **Start** button
 
